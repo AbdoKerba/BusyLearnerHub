@@ -13,6 +13,7 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
+  BreadcrumbList,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import {
@@ -144,40 +145,42 @@ export default function ProductDetailPage() {
             {/* Breadcrumbs */}
             <div className="mb-6">
               <Breadcrumb>
-                <BreadcrumbItem>
-                  <BreadcrumbLink href="/" className="flex items-center">
-                    <Home className="h-4 w-4 mr-1" />
-                    Home
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator>
-                  <ChevronRight className="h-4 w-4" />
-                </BreadcrumbSeparator>
-                <BreadcrumbItem>
-                  <BreadcrumbLink href="/products">Products</BreadcrumbLink>
-                </BreadcrumbItem>
+                <BreadcrumbList>
+                  <BreadcrumbItem>
+                    <BreadcrumbLink href="/" className="flex items-center">
+                      <Home className="h-4 w-4 mr-1" />
+                      Home
+                    </BreadcrumbLink>
+                  </BreadcrumbItem>
+                  <BreadcrumbSeparator>
+                    <ChevronRight className="h-4 w-4" />
+                  </BreadcrumbSeparator>
+                  <BreadcrumbItem>
+                    <BreadcrumbLink href="/products">Products</BreadcrumbLink>
+                  </BreadcrumbItem>
 
-                {category && (
-                  <>
-                    <BreadcrumbSeparator>
-                      <ChevronRight className="h-4 w-4" />
-                    </BreadcrumbSeparator>
-                    <BreadcrumbItem>
-                      <BreadcrumbLink href={`/products?category=${category.slug}`}>
-                        {category.name}
-                      </BreadcrumbLink>
-                    </BreadcrumbItem>
-                  </>
-                )}
+                  {category && (
+                    <>
+                      <BreadcrumbSeparator>
+                        <ChevronRight className="h-4 w-4" />
+                      </BreadcrumbSeparator>
+                      <BreadcrumbItem>
+                        <BreadcrumbLink href={`/products?category=${category.slug}`}>
+                          {category.name}
+                        </BreadcrumbLink>
+                      </BreadcrumbItem>
+                    </>
+                  )}
 
-                <BreadcrumbSeparator>
-                  <ChevronRight className="h-4 w-4" />
-                </BreadcrumbSeparator>
-                <BreadcrumbItem>
-                  <BreadcrumbLink className="font-medium text-gray-900 max-w-[200px] truncate">
-                    {isLoading ? <Skeleton className="h-4 w-32" /> : product?.name}
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
+                  <BreadcrumbSeparator>
+                    <ChevronRight className="h-4 w-4" />
+                  </BreadcrumbSeparator>
+                  <BreadcrumbItem>
+                    <BreadcrumbLink className="font-medium text-gray-900 max-w-[200px] truncate">
+                      {isLoading ? <Skeleton className="h-4 w-32" /> : product?.name}
+                    </BreadcrumbLink>
+                  </BreadcrumbItem>
+                </BreadcrumbList>
               </Breadcrumb>
             </div>
 
