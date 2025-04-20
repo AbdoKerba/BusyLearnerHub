@@ -2,7 +2,9 @@
 
 A modern, full-featured e-commerce platform built with React, Express, and TypeScript.
 
-![ShopHub](/client/public/shop-hub-logo.png)
+<div align="center">
+  <img src="client/public/shop-hub-logo.svg" alt="ShopHub Logo" width="300">
+</div>
 
 ## Features
 
