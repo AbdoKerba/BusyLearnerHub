@@ -3,7 +3,7 @@
 A modern, full-featured e-commerce platform built with React, Express, and TypeScript.
 
 <div align="center">
-  <img src="client/public/shop-hub-logo.svg" alt="ShopHub Logo" width="300">
+  <img src="client/public/ShopHub-logo.svg" alt="ShopHub Logo" width="300">
 </div>
 
 ## Features
@@ -41,8 +41,8 @@ Follow these steps to set up and run the project locally:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/shop-hub.git
-cd shop-hub
+git clone https://github.com/AbdoKerba/ShopHub.git
+cd ShopHub
 ```
 
 ### 2. Install dependencies
@@ -79,7 +79,7 @@ This will start both the frontend and backend servers. The application will be a
 ## Project Structure
 
 ```
-shop-hub/
+ShopHub/
 ├── client/                 # Frontend React application
 │   ├── src/
 │   │   ├── components/     # UI components
@@ -161,4 +161,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Your Name - your.email@example.com
 
-Project Link: [https://github.com/your-username/shop-hub](https://github.com/your-username/shop-hub)
+Project Link: [https://github.com/your-username/ShopHub](https://github.com/your-username/ShopHub)
